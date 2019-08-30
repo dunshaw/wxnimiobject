@@ -1,0 +1,17 @@
+<view class="home">
+  <scroll-view class="content"
+              scroll-with-animation="true"
+              enable-back-to-top="true">
+    <w-swiper images="{{banners}}"/>
+  </scroll-view>
+  <view class="city-chose" bindtap="bindViewTap">
+    <image class="location-img" src="../../assets/images/common/favor.png"  mode="cover">
+    </image>
+    <text class="location-text">{{location}}</text>
+  </view>
+  <view class="searchbar" bindtap="bindsearchTap">
+    <icon class="searchcion" size='18' type='search'></icon>
+    <input class="searchinput" disabled type="text" placeholder="搜索职位/公司" value="{{searchalue}}"></input>
+  </view>
+
+</view>

@@ -1,0 +1,25 @@
+<view class="search">
+      <view class="search_arlet">
+        <image src='../../assets/images/tabbar/category.png'></image>
+        <input class="text" focus="{{name_focus}}" placeholder="职位、公司搜索" data-store="{{inputValue}}" value="{{inputValue}}" bindinput='searchInput' bindconfirm="setSearchStorage" />
+      </view>
+    </view>
+    <view class="textSearch">
+     <text>空内容搜索为搜索全部</text>
+    </view>
+  <view class="Search_record_box">
+    <view class="Search_record_text">
+      <text>历史搜索</text>
+      <image bindtap='clearSearchStorage' src='../../assets/images/detail/shop.png'></image>
+    </view>
+    <view class="History-box">
+    <view class="History-list" wx:for="{{getSearch}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx" >
+      <text wx:if="{{itemName != ''}}" data-text="{{itemName}}" bindtap='this_value'>{{itemName}} </text>
+    </view>
+    </view>
+   </view>
+    <modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChangeConfirm" bindcancel="modalChangeCancel">
+      <view class='qingk'>清空浏览记录</view>
+    </modal>
+
+

@@ -1,0 +1,99 @@
+/* pages/searchbar/searchbar.wxss */
+page{
+  height: 100%;
+}
+view.search {
+    display: flex;
+    flex-direction: row;
+    height: 98rpx;
+    background: #efeff4;
+    align-items: center;
+}
+
+view.search_arlet {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    flex-direction: row;
+    border-radius: 10rpx;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+}
+
+view.search_arlet image{
+    height: 40rpx;
+    width: 40rpx;
+    align-self: center;
+    margin-left: 10rpx;
+    margin-right: 30rpx;
+}
+
+view.text{
+    flex: 1;
+    font-size: 30rpx;
+    height: 50rpx;
+}
+
+.Search_record_box{
+  height:90%;
+  background-color: white;
+}
+.textSearch{
+  font-size: 28rpx;
+  color: #898989;
+  margin-left: 30rpx;
+  padding: 20rpx;
+}
+.Search_record_text{
+  width:92%;
+  height: 44rpx;
+  padding: 15rpx;
+  margin: 0px auto
+}
+.Search_record_text>text {
+  font-size: 28rpx;
+  color: #898989;
+}
+.hot_box_text>text {
+  font-size: 28rpx;
+  color: #898989;
+  margin-left: 20rpx;
+}
+.hot_box_text {
+   margin-top: 40rpx;
+}
+.Search_record_text>image {
+  width: 44rpx;
+  height: 44rpx;
+  vertical-align: middle;
+  float: right;
+  margin-top: 5rpx;
+}
+.History-box{
+  width: 100%;
+}
+.History-list {
+  width: 90%;
+  margin: 10px auto
+}
+.History-list>text {
+  height: 65rpx;
+  border-radius: 5px;
+  background: #f5f5f5;
+  max-width: 100%;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  line-height: 65rpx;
+  font-size: 33rpx;
+  color: #393939;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  box-sizing: border-box;
+  margin-right: 20rpx;
+  float: left;
+}
+.qingk{
+  margin-left: 200rpx;
+}

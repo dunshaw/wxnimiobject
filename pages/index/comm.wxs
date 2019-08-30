@@ -1,0 +1,14 @@
+module.exports.msg2 = 'hello world';
+var bar = function(val){
+    return val +'哈哈哈！';
+}
+module.exports = {
+    bar :bar
+}
+
+var a = function(x){
+    return function(){return x};
+}
+
+var b = a(100);
+module.exports.b =b(); 
