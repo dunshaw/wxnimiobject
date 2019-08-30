@@ -1,0 +1,2 @@
+# wxnimiobject
+wx
