@@ -33,7 +33,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    defaultCity: 'A市',
-    defaultCounty: 'B区'
+    defaultCity: '北京市',
+    defaultCounty: '海淀区'
   }
 })

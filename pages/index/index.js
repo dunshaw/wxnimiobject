@@ -11,14 +11,10 @@ Page({
     flag:false,
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+
   bindmydiy: function(){
     wx.navigateTo({
-      url: '../diy/diy'
+      url: ''
     })
   },
   onLoad: function () {

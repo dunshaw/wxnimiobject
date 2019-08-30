@@ -1,6 +1,18 @@
 <!--index.wxml-->
-<view class="container">
+<view>
   <view class="userinfo">
+      <view class="userleft">
+        <button class="buttons" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 点击登录 </button>
+        <button class="buttons" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 登录后查看更多东西 </button>
+        <block wx:else>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+      <image wx:if="{{!hasUserInfo && canIUse}}" bindtap="getUserInfo" class="userinfo-avatar" src="../../assets/images/tabbar/profile.png" mode="cover"></image>
+      <image wx:else class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  </view>
+    
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -25,5 +37,5 @@
     <button type="primary" bindtap="bindmydiy">跳转</button>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
 </view>
