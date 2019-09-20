@@ -1,0 +1,7 @@
+
+<scroll-view class="section_view_icon" scroll-x>
+    <view wx:for="{{transicons}}" wx:for-item="item" wx:for-index="index" class="item_view">
+        <icon type="{{item.path}}" size="50" color="{{item.color}}" bindtap="bindViewTap" />
+        <p class="item_p">{{item.title}}</p>
+    </view>
+</scroll-view>

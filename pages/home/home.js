@@ -10,7 +10,13 @@ Page({
     ],
     location: defaultCity,
     county: defaultCounty,
-    searchValue:''
+    searchValue:'',
+    my_icons:[
+      {path:'info',title:'招聘1',color:'',url:'../../pages/recruit/recruit'},
+      {path:'warn',title:'招聘2',color:'orange',url:''},
+      {path:'success',title:'招聘3',color:'purple',url:''},
+      {path:'waiting',title:'招聘4',color:'red',url:''},
+    ]
   },
   onLoad: function () {
 

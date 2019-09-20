@@ -1,0 +1,15 @@
+.section_view_icon{
+    /* height: 150rpx; */
+    background: #eee;
+    white-space: nowrap;
+    padding: 10rpx 0;
+}
+.item_view{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    /* margin:10rpx; */
+}
+.item_p{
+    display: block;
+}
